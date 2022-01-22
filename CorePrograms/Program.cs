@@ -13,7 +13,8 @@ namespace CorePrograms
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Enter 1 to select Replace String\n"+"Enter 2 to Flip a Coin\n"); 
+                Console.WriteLine("Enter 1 to select Replace String\n"+"Enter 2 to Flip a Coin\n"
+                    +"Enter 3 to Check For leap Year\n"); 
                 int  n=Convert.ToInt32(Console.ReadLine());
                 switch (n)
                 {
@@ -26,6 +27,10 @@ namespace CorePrograms
                         flipCoin.Toss();
                         break;
                     case 3:
+                        LeapYear year=new LeapYear();   
+                        year.Check();   
+                        break;
+                    case 4:
                         flag= false;
                         break;
                 }
