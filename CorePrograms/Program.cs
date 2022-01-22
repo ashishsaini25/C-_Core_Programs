@@ -14,7 +14,8 @@ namespace CorePrograms
             while (flag)
             {
                 Console.WriteLine("Enter 1 to select Replace String\n"+"Enter 2 to Flip a Coin\n"
-                    +"Enter 3 to Check For leap Year\n"+"Enter 4 to Calculate Power of 2\n"+"Enter 5 to Calculate Value of Nth Harmonic number\n"); 
+                    +"Enter 3 to Check For leap Year\n"+"Enter 4 to Calculate Power of 2\n"+"Enter 5 to Calculate Value of Nth Harmonic number\n"
+                    +"Enter 6 to Find Factors\n"+"Enter 7 to exit\n"); 
                 int  n=Convert.ToInt32(Console.ReadLine());
                 switch (n)
                 {
@@ -39,6 +40,10 @@ namespace CorePrograms
                         harmonicNumber.Find();
                         break;
                     case 6:
+                        Factor factor = new Factor();
+                        factor.Fact();
+                        break;
+                    case 7:
                         flag= false;
                         break;
                 }
