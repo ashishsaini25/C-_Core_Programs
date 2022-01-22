@@ -14,7 +14,7 @@ namespace CorePrograms
             while (flag)
             {
                 Console.WriteLine("Enter 1 to select Replace String\n"+"Enter 2 to Flip a Coin\n"
-                    +"Enter 3 to Check For leap Year\n"); 
+                    +"Enter 3 to Check For leap Year\n"+"Enter 4 to Calculate Power of 2\n"); 
                 int  n=Convert.ToInt32(Console.ReadLine());
                 switch (n)
                 {
@@ -31,6 +31,10 @@ namespace CorePrograms
                         year.Check();   
                         break;
                     case 4:
+                        PowerOfTwo powerOfTwo = new PowerOfTwo();
+                        powerOfTwo.Pow();
+                        break;
+                    case 5:
                         flag= false;
                         break;
                 }
