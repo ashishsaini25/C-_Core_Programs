@@ -14,7 +14,7 @@ namespace CorePrograms
             while (flag)
             {
                 Console.WriteLine("Enter 1 to select Replace String\n"+"Enter 2 to Flip a Coin\n"
-                    +"Enter 3 to Check For leap Year\n"+"Enter 4 to Calculate Power of 2\n"); 
+                    +"Enter 3 to Check For leap Year\n"+"Enter 4 to Calculate Power of 2\n"+"Enter 5 to Calculate Value of Nth Harmonic number\n"); 
                 int  n=Convert.ToInt32(Console.ReadLine());
                 switch (n)
                 {
@@ -35,6 +35,10 @@ namespace CorePrograms
                         powerOfTwo.Pow();
                         break;
                     case 5:
+                        HarmonicNumber harmonicNumber = new HarmonicNumber();
+                        harmonicNumber.Find();
+                        break;
+                    case 6:
                         flag= false;
                         break;
                 }
